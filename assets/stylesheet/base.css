@@ -59,6 +59,7 @@ nav > div > span {
 
 .navlinks > ul > li > a {
   text-decoration: none;
+  color: #000;
 }
 
 .navlinks > ul > li > a:hover {
@@ -124,19 +125,8 @@ svg {
   display: none;
 }
 
-.headButtons {
-  margin-top: 2rem;
-}
-
 hr {
   border: 1px solid #aaa;
-}
-
-header {
-  margin: 3rem 0rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
 }
 
 h1 {
@@ -152,140 +142,9 @@ p {
   margin-bottom: 1rem;
 }
 
-.btnPrimary {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 16px 28px;
-  border: none;
-  border-radius: 5px;
-  font-weight: 500;
-}
-
-.btnPrimary:hover {
-  background-color: var(--primary-color-dull);
-}
-
-.btnSecondary {
-  background-color: #fff;
-  border: 1px solid var(--primary-color);
-  padding: 16px 28px;
-  border-radius: 5px;
-  font-weight: 500;
-}
-
-.btnSecondary:hover {
-  background-color: #e8e8e8;
-}
-
-.mainImg {
-  max-width: calc(var(--max-screen) / 2);
-  border-radius: 90px 10px 90px 10px;
-}
-
-.titleSlim {
-  font-size: 2rem;
-}
-
 h3 {
   font-size: 1.5rem;
   color: var(--primary-color-dark-light);
-}
-
-.about {
-  margin: 5rem 0;
-}
-
-.abouttu {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.tuimg {
-  max-width: 100%;
-  border-radius: 50px 50px 0px 0px;
-}
-
-.abouttu > p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-.btnTU {
-  background-color: var(--secondary-color);
-  color: #fff;
-  padding: 16px 28px;
-  border-radius: 5px;
-  font-weight: 500;
-  display: block;
-  width: 140px;
-}
-
-.btnTU:hover {
-  background-color: var(--secondary-color-dull);
-}
-
-.whyWhat {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-}
-
-.whyOL > li {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 5% 95%;
-  margin-bottom: 1rem;
-}
-
-.round {
-  padding: 2px 6px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-ol > li > div > p {
-  margin-bottom: 0;
-}
-
-ol > li > div > .liTitle {
-  font-weight: 700;
-}
-
-.programs {
-  border-left: solid 1px #ddd;
-  padding-left: 3rem;
-}
-
-.programOL > li {
-  margin: 1rem 0;
-  list-style: inside lower-roman;
-}
-
-.notice {
-  margin-top: 4rem;
-}
-
-table {
-  border-collapse: collapse;
-  border: 1px solid #bbb;
-  min-width: 100%;
-}
-
-thead {
-  background-color: #eee;
-}
-
-th,
-td {
-  border: 1px solid #bbb;
-  padding: 12px 10px;
-}
-
-td > a {
-  text-decoration: none;
-  color: var(--secondary-color);
 }
 
 footer {
@@ -344,12 +203,6 @@ h4 {
   nav > div > span {
     display: none;
   }
-  header {
-    grid-template-columns: 1fr;
-  }
-  .mainImg {
-    max-width: 100%;
-  }
 }
 
 @media screen and (max-width: 770px) {
@@ -362,22 +215,5 @@ h4 {
   svg {
     display: inline;
     margin-left: 2rem;
-  }
-
-  .abouttu {
-    grid-template-columns: 1fr;
-  }
-
-  .whyWhat {
-    grid-template-columns: 1fr;
-  }
-
-  .programs {
-    border-left: none;
-    padding-left: 0;
-  }
-
-  .footer-main {
-    grid-template-columns: 1fr 1fr;
   }
 }
