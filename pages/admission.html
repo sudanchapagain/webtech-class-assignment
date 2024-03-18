@@ -35,7 +35,7 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="./admission.html">Admission</a></li>
+                    <li><b>Admission</b></li>
                     <li><a href="./calender.html">Calender</a></li>
                 </ul>
             </div>
@@ -52,24 +52,63 @@
 
         <hr>
 
-        <h1 class="txtcenter">Staff Portal login</h1>
+        <h1>Apply for admission</h1>
         <br><br>
 
-        <div class="containers">
-            <main>
-                <p class="formTitle">Email</p>
-                <input size="40" class="simple" type="email" placeholder="name@site.com" name="mail">
+        <form action="">
+            <div class="grid">
+                <div>
 
-                <br><br>
+                    <p class="formTitle">Full Name</p>
+                    <input type="text" name="username" placeholder="Your Name" size="40" class="simple">
+                    <br><br>
 
-                <p class="formTitle">Password</p>
-                <input size="40" class="simple" placeholder="***********" type="password" name="password">
 
-                <br><br>
+                    <p class="formTitle">Email</p>
+                    <input type="email" size="40" placeholder="yourname@site.com" name="mail" class="simple"><br><br>
+                    <p class="formTitle">Date of Birth: </p>
+                    <input class="dob" type="date" name="dob" id="">
 
-                <input class="submit" type="submit" value="Login">
-            </main>
-        </div>
+                    <br><br>
+                    <p class="formTitle">Select your course:</p>
+                    <select class="dob" name="pro">
+                        <option value="1">BA Sociology</option>
+                        <option value="2">BA Geography</option>
+                        <option value="3">BA Rural Development</option>
+                        <option value="4">BCA</option>
+                        <option value="5">BA Music</option>
+                        <option value="6">BA Anthropology</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <p class="formTitle">Contact Number </p>
+                    <input type="tel" size="40" placeholder="+977 98*******" name="number" class="simple">
+                    <br><br>
+
+                    <p class="formTitle">High School Stream: </p>
+                    <label>Science</label>
+                    <input class="rad" type="radio" name="qual" value="1">
+                    <label>Management</label>
+                    <input class="rad" type="radio" name="qual" value="2">
+                    <label>Humanities</label>
+                    <input class="rad" type="radio" name="qual" value="3">
+                    <label>Law</label>
+                    <input class="rad" type="radio" name="qual" value="4">
+
+                    <br><br>
+
+
+
+                    <p class="formTitle">Upload your citizenship: </p>
+                    <input class="citi" type="file" name="citizenship">
+                </div>
+            </div>
+            <br>
+            <br>
+            <input class="submit" type="submit" value="Submit Form">
+        </form>
 
     </div>
 

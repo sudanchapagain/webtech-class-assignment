@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Liberation sans,Inter, Helvetica, Ariel, sans-serif;
+  font-family: Liberation sans, Inter, Helvetica, Ariel, sans-serif;
 }
 
 .page {
@@ -205,7 +205,7 @@ h4 {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 800px) {
   .navlinks,
   .btnMain,
   .btnSide {
