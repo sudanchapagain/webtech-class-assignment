@@ -42,7 +42,6 @@
 
             <div>
                 <a href="./student.html"><button class="btnMain">Student Portal</button></a>
-                <a href="./staff.html"><button class="btnSide">Staff</button></a>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
                     <path
                         d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z" />
@@ -55,54 +54,25 @@
         <h1>Apply for admission</h1>
         <br><br>
 
-        <form action="">
+        <form method="POST" action="../scripts/create_process.php">
             <div class="grid">
                 <div>
-
                     <p class="formTitle">Full Name</p>
-                    <input type="text" name="username" placeholder="Your Name" size="40" class="simple">
+                    <input type="text" name="name" placeholder="Your Name" size="40" class="simple" required>
                     <br><br>
-
 
                     <p class="formTitle">Email</p>
-                    <input type="email" size="40" placeholder="yourname@site.com" name="mail" class="simple"><br><br>
-                    <p class="formTitle">Date of Birth: </p>
-                    <input class="dob" type="date" name="dob" id="">
-
-                    <br><br>
-                    <p class="formTitle">Select your course:</p>
-                    <select class="dob" name="pro">
-                        <option value="1">BA Sociology</option>
-                        <option value="2">BA Geography</option>
-                        <option value="3">BA Rural Development</option>
-                        <option value="4">BCA</option>
-                        <option value="5">BA Music</option>
-                        <option value="6">BA Anthropology</option>
-                    </select>
+                    <input type="email" size="40" placeholder="yourname@site.com" name="email" class="simple" required><br><br>
                 </div>
 
 
                 <div>
                     <p class="formTitle">Contact Number </p>
-                    <input type="tel" size="40" placeholder="+977 98*******" name="number" class="simple">
+                    <input type="tel" size="40" placeholder="+977 98*******" name="number" class="simple" required>
                     <br><br>
 
-                    <p class="formTitle">High School Stream: </p>
-                    <label>Science</label>
-                    <input class="rad" type="radio" name="qual" value="1">
-                    <label>Management</label>
-                    <input class="rad" type="radio" name="qual" value="2">
-                    <label>Humanities</label>
-                    <input class="rad" type="radio" name="qual" value="3">
-                    <label>Law</label>
-                    <input class="rad" type="radio" name="qual" value="4">
-
-                    <br><br>
-
-
-
-                    <p class="formTitle">Upload your citizenship: </p>
-                    <input class="citi" type="file" name="citizenship">
+                    <p class="formTitle">Password:</p>
+                    <input type="password" size="40" placeholder="********" name="password" class="simple" required>
                 </div>
             </div>
             <br>
