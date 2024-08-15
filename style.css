@@ -57,15 +57,16 @@ nav > div > span {
   padding: 0.5rem 1rem;
 }
 
-.navlinks > ul > li > a {
-  text-decoration: none;
-}
-
 .navlinks > ul > li > a:hover {
   text-decoration: underline;
 }
 
 .navlinks > ul > li > a:visited {
+  color: #000;
+}
+
+.navlinks > ul > li > a {
+  text-decoration: none;
   color: #000;
 }
 
